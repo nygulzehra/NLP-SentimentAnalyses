@@ -4,7 +4,9 @@ import streamlit as st
 import numpy as np
 from joblib import load
 from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
+# from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
 import nltk
 import re
 

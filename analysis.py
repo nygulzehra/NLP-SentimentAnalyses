@@ -17,8 +17,8 @@ def expression_check(prediction_input):
 def sentiment_predictor(input):
     input = text_transformation(input)
 
-    lr1 = load('Desktop/DataScience/proje4 - NLP/streamlit/lr1.pkl')
-    tfidf1 = load("/Users/zehragul/Desktop/DataScience/proje4 - NLP/streamlit/tfidf.pkl")
+    lr1 = load("lr1.pkl")
+    tfidf1 = load("tfidf.pkl")
 
     transformed_input=tfidf1.transform(input)
     prediction = lr1.predict(transformed_input)
@@ -36,14 +36,14 @@ st.set_page_config(
 )
 
 st.title("**black[Review Sentiment Analysis Project]**")
-st.image("/Users/zehragul/Desktop/DataScience/proje4 - NLP/streamlit/pos-neg.png")
+st.image("pos-neg.png")
 st.markdown("Let's try ! ")
 
 st.subheader("*:blue[Let's try sentiment analysis using machine learning!]*")
 text = st.text_input("Write here" )
 
 st.button("Submit")
-    #---------------------------------------------------------------------------------------------------------------------
+
     # Sonuç Ekranı
 if st.button("Submit"):
 

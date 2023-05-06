@@ -27,9 +27,9 @@ def text_transformation(df_col):
 
 def expression_check(prediction_input):
 
-    if prediction_input == -1:
+    if (prediction_input).any() == -1:
         print("👎🏻 Negative Sentiment.")
-    elif prediction_input == 1:
+    elif (prediction_input).all() == 1:
         print("👍🏻 Positive Sentiment.")
     else:
         print("Invalid Statement.")

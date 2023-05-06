@@ -58,10 +58,8 @@ st.set_page_config(
 
 st.title("**:black[Review Sentiment Analysis Project]**")
 st.image("pos-neg.png")
-st.markdown("Let's try ! ")
-
-st.subheader("*:blue[Let's try sentiment analysis using machine learning!]*")
-text = st.text_input("Write here" )
+st.markdown("Let's try it! ")
+text = st.text_input("Write your text here" )
 
     # Sonuç Ekranı
 if st.button("Submit"):

@@ -5,6 +5,7 @@ import numpy as np
 from joblib import load
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
+import re
 
 # Clean numbers, punctuation
 # lowercasing
@@ -53,7 +54,7 @@ st.set_page_config(
     }
 )
 
-st.title("**black[Review Sentiment Analysis Project]**")
+st.title("**:black[Review Sentiment Analysis Project]**")
 st.image("pos-neg.png")
 st.markdown("Let's try ! ")
 

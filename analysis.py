@@ -42,8 +42,6 @@ st.markdown("Let's try ! ")
 st.subheader("*:blue[Let's try sentiment analysis using machine learning!]*")
 text = st.text_input("Write here" )
 
-st.button("Submit")
-
     # Sonuç Ekranı
 if st.button("Submit"):
 

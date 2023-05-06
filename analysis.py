@@ -26,7 +26,7 @@ def text_transformation(df_col):
     return corpus
 
 def expression_check(prediction_input):
-
+    st.markdown(prediction_input)
     if (prediction_input).any() == -1:
         print("👎🏻 Negative Sentiment.")
     elif (prediction_input).all() == 1:

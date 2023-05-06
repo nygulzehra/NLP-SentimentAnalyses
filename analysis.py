@@ -38,7 +38,7 @@ def expression_check(prediction_input):
 def sentiment_predictor(input):
     input = text_transformation(input)
 
-    lr1 = load("lr1.pkl")
+    lr1 = load("svc1.pkl")
     tfidf1 = load("tfidf1.pkl")
 
     transformed_input=tfidf1.transform(input)

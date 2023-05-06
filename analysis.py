@@ -3,8 +3,9 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 from joblib import load
-from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
+# from nltk.stem import WordNetLemmatizer
+# from nltk.corpus import stopwords
+import nltk
 import re
 
 # Clean numbers, punctuation

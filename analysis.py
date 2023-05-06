@@ -14,7 +14,7 @@ import re
 # split
 # stemmer
 def text_transformation(df_col):
-    
+    lm = WordNetLemmatizer()
     corpus = []
     for item in df_col:
         new_item = re.sub('[^a-zA-Z]',' ',str(item))

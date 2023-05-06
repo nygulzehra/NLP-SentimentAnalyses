@@ -3,6 +3,24 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 from joblib import load
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+
+# Clean numbers, punctuation
+# lowercasing
+# split
+# stemmer
+def text_transformation(df_col):
+    
+    corpus = []
+    for item in df_col:
+        new_item = re.sub('[^a-zA-Z]',' ',str(item))
+        new_item = new_item.lower()
+        new_item = new_item.split()
+        new_item = [lm.lemmatize(word) for word in new_item if 
+                    word not in set(stopwords.words('english'))]
+        corpus.append(' '.join(str(x) for x in new_item))
+    return corpus
 
 def expression_check(prediction_input):
 

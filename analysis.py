@@ -40,7 +40,7 @@ st.image("/Users/zehragul/Desktop/DataScience/proje4 - NLP/streamlit/pos-neg.png
 st.markdown("Let's try ! ")
 
 st.subheader("*:blue[Let's try sentiment analysis using machine learning!]*")
-text = st.text_input("Write here )
+text = st.text_input("Write here" )
 
 st.button("Submit")
     #---------------------------------------------------------------------------------------------------------------------

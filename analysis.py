@@ -39,7 +39,7 @@ def sentiment_predictor(input):
     input = text_transformation(input)
 
     lr1 = load("lr1.pkl")
-    tfidf1 = load("tfidf.pkl")
+    tfidf1 = load("tfidf1.pkl")
 
     transformed_input=tfidf1.transform(input)
     prediction = lr1.predict(transformed_input)

@@ -65,4 +65,4 @@ text = st.text_input("Write your text here" )
 if st.button("Submit"):
 
     st.info("*result*")
-    sentiment_predictor(text)
+    sentiment_predictor("["+ text+"]")
